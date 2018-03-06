@@ -62,6 +62,8 @@ function supprimer() {
 				if(aTr[i].children[0].innerHTML == maReponse['_id']) {
 					console.log(oTab.children[0]);
 					console.log(oTab.children[0].children[i]);
+
+    				aTr[i].children[6].removeEventListener('click', supprimer, false);
 					oTab.children[0].removeChild(oTab.children[0].children[i]);
 				}
 			}
