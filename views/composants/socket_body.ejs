@@ -91,7 +91,7 @@
 	function afficherMsg(data, couleur) {
 		let tabMessages = document.getElementById('message');
 		let sChaine = tabMessages.innerHTML;
-		sChaine += '<tr><td>' + data.msg + '</td></tr>';
+		sChaine += '<tr><th>' + data.user + '</th><td>' + data.msg + '</td></tr>';
 		tabMessages.innerHTML = sChaine;
 		aTr = tabMessages.querySelectorAll('tr');
 		aTr[aTr.length-1].style.backgroundColor = couleur;
